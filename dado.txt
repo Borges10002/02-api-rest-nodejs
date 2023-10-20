@@ -20,3 +20,6 @@ biblioteca knex
   npm run knex -- migrate:latest
   npm run knex -- migrate:rollback
   npm run knex -- migrate:make add-session-id-to-transactions
+
+biblioteca para validacao de dados
+  npm i zod
