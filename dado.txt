@@ -1,0 +1,22 @@
+biblioteca do typescript
+npm i typescript 
+npm install -D @types/node
+npm install tsx -D
+npx tsc --init
+
+
+biblioteca
+  npm i fastify
+
+biblioteca para padronizar projeto
+ npm i eslint -D
+ npm i eslint @rocketseat/eslint-config -D
+
+biblioteca knex 
+  https://knexjs.org/guide/
+  npm install knex --save
+  npm install sqlite3
+  npm run knex -- migrate:make create-documents
+  npm run knex -- migrate:latest
+  npm run knex -- migrate:rollback
+  npm run knex -- migrate:make add-session-id-to-transactions
