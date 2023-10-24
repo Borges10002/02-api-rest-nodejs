@@ -1,14 +1,12 @@
 import fastify from "fastify";
-import { knex } from "./database";
 import { env } from "./env";
+import { transactionsRoutes } from "./routes/transactions";
 
 const app = fastify();
 
-app.get("/hello", async () => {
-  console.log("teste");
-  const tables = await knex("sqlite_schema").select("*");
-
-  return tables;
+app.register(transactionsRoutes);
+app.register(transactionsRoutes, {
+  prefix: "transactions",
 });
 
 const port = env.PORT;
