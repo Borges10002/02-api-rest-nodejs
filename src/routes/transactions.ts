@@ -40,10 +40,22 @@ export async function transactionsRoutes(app: FastifyInstance) {
       request.body
     );
 
+    let sesseionId = request.cookies.sesseionId;
+
+    if (!sesseionId) {
+      sesseionId = randomUUID();
+
+      replay.cookie("sessionId", sesseionId, {
+        path: "/",
+        maxAge: 1000 * 60 * 24 * 7, // 7 dias
+      });
+    }
+
     await knex("transactions").insert({
       id: randomUUID(),
       title,
       amount: type === "credit" ? amount : amount * -1,
+      session_id: sesseionId,
     });
 
     return replay.status(201).send();

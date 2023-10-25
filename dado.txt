@@ -5,8 +5,9 @@ npm install tsx -D
 npx tsc --init
 
 
-biblioteca
+biblioteca fastify
   npm i fastify
+  npm i @fastify/cookie --work with cookie
 
 biblioteca para padronizar projeto
  npm i eslint -D
