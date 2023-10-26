@@ -24,3 +24,9 @@ biblioteca knex
 
 biblioteca para validacao de dados
   npm i zod
+
+biblioteca for test
+  https://vitest.dev/guide/features.html
+  npm i vitest -D
+  npm i supertest -D
+  npm i --save-dev @types/supertest`
