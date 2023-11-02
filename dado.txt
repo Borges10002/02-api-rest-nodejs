@@ -33,3 +33,8 @@ biblioteca for test
 
   biblioteca para build
    npm i tsup -D
+
+  app para fazer deploy
+    render.com
+    fly.io
+    railway
