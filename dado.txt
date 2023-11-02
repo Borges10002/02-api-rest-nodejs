@@ -29,4 +29,7 @@ biblioteca for test
   https://vitest.dev/guide/features.html
   npm i vitest -D
   npm i supertest -D
-  npm i --save-dev @types/supertest`
+  npm i --save-dev @types/supertest
+
+  biblioteca para build
+   npm i tsup -D
